@@ -17,8 +17,8 @@ Any notes i find interesting will be put in this readme file
 
 ## Binary system
 
-|128|64|32|16|8|4|2|1| Value
-\---------------------
+|128|64|32|16|8|4|2|1| Value <br>
+\--------------------- <br>
 | 7 | 6| 5| 4|3|2|1|0| Bit number
 
 ## Hex
@@ -77,7 +77,7 @@ mov eax, ebx ; This is a comment
 ```
 ## ASM Statements
 
-* Isnstructions (opcode)
+* Instructions (opcode)
 * Assembler directives
 * Macros
 
