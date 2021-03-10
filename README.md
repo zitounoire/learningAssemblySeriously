@@ -90,7 +90,7 @@ mov eax, ebx ; This is a comment
 # Compiling and linking an asm program
 
 ```
-$ nasm -f <.asm file>
+$ nasm -f elf <.asm file> (here we chose the elf format but there are plenty more to choose from nasm -f)
 $ ld -m elf_i386 -s -o <binary name> <.o object file name>
 ```
 # Example
@@ -114,5 +114,28 @@ An assembly program is divided into three segments
 * Data segment (represented by the .data and .bss sections)
 * Code segment (represented by the .text section) 
 * The Stack (contains arguments passed to functions and procedures)
+
+# Registers
+
+## Data registers
+
+EAX - EBX - ECX - EDX
+
+## Pointer registers
+
+EIP - ESP - EBP 
+
+## Index registers
+
+ESI - EDI
+
+## Flags register
+
+Holds flags that are useful in arithmetic operations, comparaisons ...(carry flag, parity flag ...and more)
+
+
+## Segment registers
+
+DS - SS - CS
 
 
