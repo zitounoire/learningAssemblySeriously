@@ -138,4 +138,15 @@ Holds flags that are useful in arithmetic operations, comparaisons ...(carry fla
 
 DS - SS - CS
 
+# System calls
+
+* System call number is stored in eax.
+* Arguments to the systemcall are stored in ebx, ecx, edx, esi, edi and ebp
+* A call to int 0x80 is performed to pass the hand to the kernel
+* Generally the result is stored in eax
+
+you can find syscall numbers in this file /usr/include/asm/unistd.h (in my distro it's a bit diffrent but the file is still there)
+
+tables can also be found online for syscall numbers, along with the arguments needed and in which registers to place them.
+
 
